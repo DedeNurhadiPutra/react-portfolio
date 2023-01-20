@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  :root {
+    --color-bg: #151515;
+    --color-white: #f7f7f7;
+    --color-light: #777777;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    background-image: url(assets/bg-img.png);
+    line-height: 1.7;
+  }
+
+  #fullpage .section .fp-watermark {
+    display: none;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:active {
+    transition: background-color 50000s;
+    -webkit-text-fill-color: #eaeaea !important;
+  }
+
+  .hide {
+    display: none;
+  }
+  /* ========== General Style ========== */
+  /* fixed bottom-2 inset-x-0 bg-blue-800 bg-opacity-20 w-max mx-auto 
+  py-3 px-3 z-50 flex flex-row justify-between gap-2 rounded-full backdrop-blur-sm */
+
+  /* #fp-nav { */
+  /* position: fixed;
+    z-index: 99;
+    @apply bottom-0;
+    left: 50%;
+    opacity: 1;
+    transform: rotate(270deg); */
+  /* @apply fixed bottom-2 inset-x-0 -rotate-90 bg-blue-800 bg-opacity-20 w-max mx-auto py-3 px-3 z-50 flex flex-row justify-between gap-2 rounded-full backdrop-blur-sm;
+  } */
+
+  /* #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    border-radius: 0%;
+    background-image: url(assets/portfolio-1.png);
+    object-fit: cover;
+  } */
+
+  /* #app section {
+    scroll-snap-align: center;
+  } */
+  /* .container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  } */
+
+  /* h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 500;
+  } */
+  /* 
+  h1 {
+    font-size: 2.5rem;
+  } */
+
+  /* section {
+    margin-top: 8rem;
+  }
+
+  section > h2,
+  section > h5 {
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .text-light {
+    color: var(--color-light);
+  }
+
+  a {
+    color: var(--color-white);
+    transition: var(--transition);
+  }
+
+  a:hover {
+    color: var(--color-light);
+  }
+
+  .btn {
+    width: max-content;
+    display: inline-block;
+    color: aqua;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid cadetblue;
+    transition: var(--transition);
+  }
+
+  .btn {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+  }
+
+  .btn-primary {
+    background: aquamarine;
+    color: var(--color-bg);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  } */
+
+  /* Media queries (medium devices) */
+  /* @media screen and (max-width: 1024px) {
+    .container {
+      width: var(--container-width-md);
+    }
+
+    section {
+      margin-top: 6rem;
+    }
+  } */
+
+  /* Media queries (small devices) */
+  /* @media screen and (max-width: 600px) {
+    .container {
+      width: var(--container-width-sm);
+    }
+
+    section > h2 {
+      margin-bottom: 2rem;
+    }
+  } */
 }
