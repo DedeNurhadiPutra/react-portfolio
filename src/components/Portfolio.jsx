@@ -37,21 +37,23 @@ const data = [
 
 const Portfolio = () => {
   return (
-    <div className="text-center my-10">
-      <h6 className="text-xs">My Recent Work</h6>
-      <h2 className="text-2xl mt-1 text-blue-500 font-medium">Portfolio</h2>
+    <div className="text-center mt-10 mb-20 md:pt-2 md:pb-10">
+      <h6 className="text-xs md:text-base">My Recent Work</h6>
+      <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
+        Portfolio
+      </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6">
+      <div className="grid grid-cols-1 gap-4 mt-6 w-5/6 mx-auto md:grid-cols-2 md:w-4/5 md:mt-10">
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <div
               key={id}
-              className="w-5/6 mx-auto text-left bg-[#202020] border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500"
+              className="text-left bg-[#202020] border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500"
             >
               <img
                 src={image}
                 alt={title}
-                className="mx-auto w-[90%] rounded-2xl"
+                className="mx-auto w-4/5 aspect-square object-cover rounded-2xl hover:scale-110 ease-in-out duration-500"
               />
               <p className="p-6">{title}</p>
               <div className="flex gap-2 px-6">

@@ -15,7 +15,10 @@ module.exports = {
         LightGray : '#bcbcbc'
       },
       screens: {
-        'cls': {'raw' : '(min-width:400px) and (max-height: 1000px)'}
+        '2xl': '1280px',
+        'xl': '1024px',
+        'llg': {'raw' : '(min-width:1000px) and (max-height: 720px)'},
+        'cls': {'raw' : '(min-width:400px) and (max-height: 1000px)'},
       },
     },
   },

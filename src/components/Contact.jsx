@@ -39,14 +39,16 @@ const Contact = () => {
   // end emailjs
 
   return (
-    <div className="text-center my-10">
-      <h5 className="text-xs">Get In Touch</h5>
-      <h2 className="text-2xl mt-1 text-blue-500 font-medium">Contact Me</h2>
+    <div className="text-center w-5/6 mt-10 mb-12 mx-auto md:pt-2 md:pb-10 md:w-[70%]">
+      <h5 className="text-xs md:text-base">Get In Touch</h5>
+      <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
+        Contact Me
+      </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6">
+      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8">
         <div>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500">
-            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:text-red-500" />
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
+            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl" />
             <h4>Email</h4>
             <h5 className="text-sm mt-1 mb-4">denurhadiputra@gmail.com</h5>
             <a
@@ -57,7 +59,7 @@ const Contact = () => {
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500">
+          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
             {/* gradient for insta */}
             <svg width="0" height="0">
               <linearGradient
@@ -74,7 +76,7 @@ const Contact = () => {
               </linearGradient>
             </svg>
             {/* end gradient for insta */}
-            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)]" />
+            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl" />
             <h4>Instagram</h4>
             <h5 className="text-sm mt-1 mb-4">@denurhadiputra</h5>
             <a
@@ -85,8 +87,8 @@ const Contact = () => {
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500">
-            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:text-[#25D366]" />
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
+            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl" />
             <h4>Whatsapp</h4>
             <h5 className="text-sm mt-1 mb-4">+6282167500197</h5>
             <a
@@ -105,7 +107,7 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Your Full Name"
-            className="w-5/6 p-4 mt-10 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none"
+            className="w-5/6 p-4 mt-10 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none md:mt-6"
             required
           />
           <input

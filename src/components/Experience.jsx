@@ -12,12 +12,14 @@ import { SiCodeigniter } from "react-icons/si";
 
 const Experience = () => {
   return (
-    <div className="text-center my-10">
-      <h6 className="text-xs">What Skill I Have</h6>
-      <h2 className="text-xl mt-1 text-blue-500 font-medium">My Exprience</h2>
+    <div className="text-center my-10 md:pt-0 md:pb-10">
+      <h6 className="text-xs md:text-base">What Skill I Have</h6>
+      <h2 className="text-xl mt-1 text-blue-500 font-bold md:text-2xl">
+        My Exprience
+      </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6">
-        <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500">
+      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-10">
+        <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:w-2/3 md:py-10">
           <h3 className="text-lg">Frontend Development</h3>
           <div className="grid grid-cols-2 mt-8 gap-4">
             <article>
@@ -47,7 +49,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="group w-5/6 mx-auto py-7 bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl hover:bg-indigo-900 ease-in-out duration-500">
+        <div className="group w-5/6 mx-auto py-7 bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl hover:bg-indigo-900 ease-in-out duration-500 md:w-2/3 md:py-12 md:mt-6">
           <h3>Backend Development</h3>
           <div className="grid grid-cols-2 mt-8 gap-4">
             <article>

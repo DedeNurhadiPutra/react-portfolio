@@ -29,10 +29,10 @@ const Fullpage = () => (
             <Experience/>
           </div>
           <div className="section">
-            <Portfolio/>
+            <Service/>
           </div>
           <div className="section">
-            <Service/>
+            <Portfolio/>
           </div>
           <div className="section">
             <Testimonial/>

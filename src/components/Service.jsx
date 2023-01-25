@@ -3,12 +3,14 @@ import { GiCheckMark } from "react-icons/gi";
 
 const Service = () => {
   return (
-    <div className="text-center my-10">
-      <h6 className="text-xs">What I Offer</h6>
-      <h2 className="text-xl mt-1 text-blue-500 font-medium">Services</h2>
+    <div className="text-center mt-10 mb-20 md:pt-2 md:pb-10">
+      <h6 className="text-xs md:text-base">What I Offer</h6>
+      <h2 className="text-xl mt-1 text-blue-500 font-bold md:text-2xl">
+        Services
+      </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6">
-        <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer">
+      <div className="grid grid-cols-1 gap-4 w-5/6 mt-6 mx-auto md:grid-cols-2 md:w-4/5 md:gap-10 md:mt-10">
+        <div className="group bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer">
           <div className="bg-indigo-500 p-8 rounded-b-[2rem] group-hover:bg-blue-600">
             <h3>UI/UX Design</h3>
           </div>
@@ -40,7 +42,7 @@ const Service = () => {
           </ul>
         </div>
 
-        <div className="group w-5/6 my-6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer">
+        <div className="group my-6 bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer md:my-0">
           <div className="bg-indigo-500 p-8 rounded-b-[2rem] group-hover:bg-blue-600">
             <h3>Web Development</h3>
           </div>
@@ -76,7 +78,7 @@ const Service = () => {
           </ul>
         </div>
 
-        <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer">
+        <div className="group bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-b-xl hover:bg-indigo-900 hover:text-GoldenPoppy ease-in-out duration-500 cursor-pointer">
           <div className="bg-indigo-500 p-8 rounded-b-[2rem] group-hover:bg-blue-600">
             <h3>Content Creation</h3>
           </div>

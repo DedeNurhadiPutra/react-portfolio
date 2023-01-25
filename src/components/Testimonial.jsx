@@ -35,12 +35,14 @@ const data = [
 
 const Testimonial = () => {
   return (
-    <div className="text-center">
-      <h6 className="text-xs mt-1">My Recent Work</h6>
-      <h2 className="text-2xl mt-1 text-blue-500 font-medium">Testimonial</h2>
+    <div className="text-center md:py-6">
+      <h6 className="text-xs mt-1 md:text-base">My Recent Work</h6>
+      <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
+        Testimonial
+      </h2>
 
       <Swiper
-        className="w-5/6 mt-6 h-full" // install Swiper modules
+        className="w-3/4 mt-6 h-full md:mt-10" // install Swiper modules
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
@@ -49,16 +51,16 @@ const Testimonial = () => {
           return (
             <SwiperSlide
               key={index}
-              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500"
+              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500 md:p-20 md:px-4"
             >
               <img
                 src={avatar}
                 alt={name}
-                className="mx-auto w-20 aspect-square overflow-hidden rounded-full border-[0.4rem] border-blue-500"
+                className="mx-auto w-20 aspect-square object-cover overflow-hidden rounded-full border-[0.4rem] border-blue-500 md:w-28"
               />
-              <h3 className="pt-4 pb-2">{name}</h3>
+              <h3 className="pt-4 pb-2 md:text-lg md:py-6">{name}</h3>
               <div className="px-8">
-                <q className="text-sm select-none">{review}</q>
+                <q className="text-sm select-none md:text-base">{review}</q>
               </div>
             </SwiperSlide>
           );
