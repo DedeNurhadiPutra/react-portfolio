@@ -6,7 +6,7 @@ import { FaCodepen } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-GoldenPoppy h-44 p-1 text-center text-ChineseBlack md:h-72 md:pt-10">
+    <div className="bg-GoldenPoppy h-44 p-1 text-center text-ChineseBlack md:h-72 md:pt-10 llg:h-64 llg:pt-8">
       <a href="#javascript" className="font-extrabold text-2xl md:text-3xl">
         Deryx
       </a>

@@ -33,33 +33,35 @@ const Contact = () => {
       form.current,
       "bNWEleIou45iELWr1"
     );
-    Alert.success("Successfully created!", styles);
+    Alert.success("Thank you for submitting the form!", styles);
     e.target.reset();
   };
   // end emailjs
 
   return (
-    <div className="text-center w-5/6 mt-10 mb-12 mx-auto md:pt-2 md:pb-10 md:w-[70%]">
-      <h5 className="text-xs md:text-base">Get In Touch</h5>
+    <div className="text-center w-5/6 mt-10 mb-12 mx-auto md:pt-2 md:pb-10 md:w-[70%] llg:mt-8 llg:mb-8">
+      <h5 className="text-xs md:text-base llg:text-xs">Get In Touch</h5>
       <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
         Contact Me
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8">
+      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8 llg:grid-cols-[30%,60%] llg:mt-5 llg:gap-6">
         <div>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
-            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl" />
-            <h4>Email</h4>
-            <h5 className="text-sm mt-1 mb-4">denurhadiputra@gmail.com</h5>
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 llg:w-4/5">
+            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl llg:text-3xl llg:my-1" />
+            <h4 className="llg:text-sm">Email</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs">
+              denurhadiputra@gmail.com
+            </h5>
             <a
               href="mailto:denurhadiputra@gmail.com"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
+          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4">
             {/* gradient for insta */}
             <svg width="0" height="0">
               <linearGradient
@@ -76,25 +78,25 @@ const Contact = () => {
               </linearGradient>
             </svg>
             {/* end gradient for insta */}
-            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl" />
-            <h4>Instagram</h4>
-            <h5 className="text-sm mt-1 mb-4">@denurhadiputra</h5>
+            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl llg:text-4xl llg:my-1" />
+            <h4 className="llg:text-sm">Instagram</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs">@denurhadiputra</h5>
             <a
               href="https://www.instagram.com/denurhadiputra/"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10">
-            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl" />
-            <h4>Whatsapp</h4>
-            <h5 className="text-sm mt-1 mb-4">+6282167500197</h5>
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4">
+            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl llg:text-3xl llg:my-1" />
+            <h4 className="llg:text-sm">Whatsapp</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs">+6282167500197</h5>
             <a
               href="https://api.whatsapp.com/send?phone=+6282167500197"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
@@ -107,7 +109,7 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Your Full Name"
-            className="w-5/6 p-4 mt-10 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none md:mt-6"
+            className="w-5/6 p-4 mt-10 bg-transparent bordersolid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none md:mt-6 llg:mt-0 llg:w-full"
             required
           />
           <input
@@ -115,7 +117,7 @@ const Contact = () => {
             name="email"
             id="email"
             placeholder="Your Email"
-            className="w-5/6 p-4 my-6 border-solid border-[1px] border-blue-500 rounded-lg bg-transparent focus:border-GoldenPoppy focus:outline-none"
+            className="w-5/6 p-4 my-6 border-solid border-[1px] border-blue-500 rounded-lg bg-transparent focus:border-GoldenPoppy focus:outline-none llg:my-6 llg:w-full"
             required
           />
           <textarea
@@ -124,12 +126,12 @@ const Contact = () => {
             cols="30"
             rows="10"
             placeholder="Your Message"
-            className="w-5/6 block mx-auto p-4 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none"
+            className="w-5/6 block mx-auto p-4 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none llg:mt-0 llg:w-full llg:h-[51%]"
             required
           ></textarea>
           <button
             type="submit"
-            className="mt-6 mb-10 px-6 py-2 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-blue-500 rounded-lg"
+            className="mt-6 mb-10 px-6 py-2 bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-blue-500 rounded-lg llg:mt-4 llg:mb-0"
           >
             Submit
           </button>

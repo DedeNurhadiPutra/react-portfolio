@@ -36,13 +36,13 @@ const data = [
 const Testimonial = () => {
   return (
     <div className="text-center md:py-6">
-      <h6 className="text-xs mt-1 md:text-base">My Recent Work</h6>
+      <h6 className="text-xs mt-1 md:text-base llg:text-xs">My Recent Work</h6>
       <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
         Testimonial
       </h2>
 
       <Swiper
-        className="w-3/4 mt-6 h-full md:mt-10" // install Swiper modules
+        className="w-3/4 mt-6 h-full md:mt-10 llg:w-2/5 llg:mt-6" // install Swiper modules
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
@@ -51,7 +51,7 @@ const Testimonial = () => {
           return (
             <SwiperSlide
               key={index}
-              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500 md:p-20 md:px-4"
+              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500 md:py-20 md:px-4 llg:py-16"
             >
               <img
                 src={avatar}
