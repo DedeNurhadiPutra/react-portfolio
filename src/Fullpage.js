@@ -13,7 +13,7 @@ const Fullpage = () => (
   <ReactFullpage
     licenseKey = {'YOUR_KEY_HERE'}
     scrollingSpeed = {1200}
-    anchors = {['home', 'about', 'portfolio', 'service', 'contact']}
+    anchors = {['home', 'about', 'experience', 'service', 'portfolio', 'testimonial', 'contact']}
     navigation = {false}
 
     render={({ state, fullpageApi }) => {

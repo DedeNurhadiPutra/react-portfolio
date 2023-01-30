@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Project1 from "../assets/portfolio-1.png";
 import Project2 from "../assets/portfolio-2.PNG";
 import Project3 from "../assets/portfolio-3.PNG";
@@ -34,6 +34,11 @@ const data = [
 ];
 
 const Testimonial = () => {
+  // for title
+  useEffect(() => {
+    document.title = "Testimonial | Portfolio Dede Nurhadi Putra";
+  }, []);
+
   return (
     <div className="text-center md:py-6">
       <h6 className="text-xs mt-1 md:text-base llg:text-xs">My Recent Work</h6>
@@ -42,7 +47,7 @@ const Testimonial = () => {
       </h2>
 
       <Swiper
-        className="w-3/4 mt-6 h-full md:mt-10 llg:w-2/5 llg:mt-6" // install Swiper modules
+        className="w-3/4 mt-6 h-full md:mt-10 llg:w-2/5 llg:mt-6 lg:w-2/5 lg:mt-6" // install Swiper modules
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
@@ -59,7 +64,7 @@ const Testimonial = () => {
                 className="mx-auto w-20 aspect-square object-cover overflow-hidden rounded-full border-[0.4rem] border-blue-500 md:w-28"
               />
               <h3 className="pt-4 pb-2 md:text-lg md:py-6">{name}</h3>
-              <div className="px-8">
+              <div className="px-8 lg:px-6">
                 <q className="text-sm select-none md:text-base">{review}</q>
               </div>
             </SwiperSlide>

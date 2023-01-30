@@ -9,11 +9,6 @@ import emailjs from "@emailjs/browser";
 import Alert from "./ToastAlert";
 
 const Contact = () => {
-  // for title
-  useEffect(() => {
-    document.title = "Contact | Portfolio Dede Nurhadi Putra";
-  }, []);
-
   // for emailjs
   const form = useRef();
 
@@ -39,29 +34,29 @@ const Contact = () => {
   // end emailjs
 
   return (
-    <div className="text-center w-5/6 mt-10 mb-12 mx-auto md:pt-2 md:pb-10 md:w-[70%] llg:mt-8 llg:mb-8">
+    <div className="text-center w-5/6 mt-10 mb-12 mx-auto md:pt-2 md:pb-10 md:w-[70%] llg:mt-8 llg:mb-8 lg:mt-8 lg:mb-0">
       <h5 className="text-xs md:text-base llg:text-xs">Get In Touch</h5>
       <h2 className="text-2xl mt-1 text-blue-500 font-bold md:text-2xl">
         Contact Me
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8 llg:grid-cols-[30%,60%] llg:mt-5 llg:gap-6">
+      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8 llg:grid-cols-[30%,60%] llg:mt-5 llg:gap-6 lg:grid-cols-[30%,60%] lg:mt-5 lg:gap-6">
         <div>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 llg:w-4/5">
-            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl llg:text-3xl llg:my-1" />
-            <h4 className="llg:text-sm">Email</h4>
-            <h5 className="text-sm mt-1 mb-4 llg:text-xs">
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 lg:py-6">
+            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            <h4 className="llg:text-sm lg:text-sm">Email</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
               denurhadiputra@gmail.com
             </h5>
             <a
               href="mailto:denurhadiputra@gmail.com"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px] lg:text-xs lg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4">
+          <article className="group w-5/6 my-4 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 lg:py-6">
             {/* gradient for insta */}
             <svg width="0" height="0">
               <linearGradient
@@ -78,25 +73,29 @@ const Contact = () => {
               </linearGradient>
             </svg>
             {/* end gradient for insta */}
-            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl llg:text-4xl llg:my-1" />
-            <h4 className="llg:text-sm">Instagram</h4>
-            <h5 className="text-sm mt-1 mb-4 llg:text-xs">@denurhadiputra</h5>
+            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl llg:text-4xl llg:my-1 lg:text-4xl lg:my-1" />
+            <h4 className="llg:text-sm lg:text-sm">Instagram</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
+              @denurhadiputra
+            </h5>
             <a
               href="https://www.instagram.com/denurhadiputra/"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px] lg:text-xs lg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
           </article>
-          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4">
-            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl llg:text-3xl llg:my-1" />
-            <h4 className="llg:text-sm">Whatsapp</h4>
-            <h5 className="text-sm mt-1 mb-4 llg:text-xs">+6282167500197</h5>
+          <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 lg:py-6">
+            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            <h4 className="llg:text-sm lg:text-sm">Whatsapp</h4>
+            <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
+              +6282167500197
+            </h5>
             <a
               href="https://api.whatsapp.com/send?phone=+6282167500197"
               target="__blank"
-              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px]"
+              className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px] lg:text-xs lg:hover:text-[13px]"
             >
               Send a message <AiOutlineSend className="inline-block" />
             </a>
@@ -109,7 +108,7 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Your Full Name"
-            className="w-5/6 p-4 mt-10 bg-transparent bordersolid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none md:mt-6 llg:mt-0 llg:w-full"
+            className="w-5/6 p-4 mt-10 bg-transparent bordersolid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none md:mt-6 llg:mt-0 llg:w-full lg:mt-0 lg:w-full"
             required
           />
           <input
@@ -117,7 +116,7 @@ const Contact = () => {
             name="email"
             id="email"
             placeholder="Your Email"
-            className="w-5/6 p-4 my-6 border-solid border-[1px] border-blue-500 rounded-lg bg-transparent focus:border-GoldenPoppy focus:outline-none llg:my-6 llg:w-full"
+            className="w-5/6 p-4 my-6 border-solid border-[1px] border-blue-500 rounded-lg bg-transparent focus:border-GoldenPoppy focus:outline-none llg:my-6 llg:w-full lg:my-6 lg:w-full"
             required
           />
           <textarea
@@ -126,7 +125,7 @@ const Contact = () => {
             cols="30"
             rows="10"
             placeholder="Your Message"
-            className="w-5/6 block mx-auto p-4 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none llg:mt-0 llg:w-full llg:h-[51%]"
+            className="w-5/6 block mx-auto p-4 bg-transparent border-solid border-[1px] border-blue-500 rounded-lg focus:border-GoldenPoppy focus:outline-none llg:mt-0 llg:w-full llg:h-[51%] lg:mt-0 lg:w-full lg:h-[51%]"
             required
           ></textarea>
           <button
