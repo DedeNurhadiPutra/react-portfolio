@@ -1,15 +1,9 @@
-import React, { useEffect } from "react";
 import Me from "../assets/profile-4.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
-  // for title
-  useEffect(() => {
-    document.title = "About | Portfolio Dede Nurhadi Putra";
-  }, []);
-
   return (
     <div className="h-screen py-10 md:py-14 lg:pt-16 lg:pb-0">
       <h5 className="text-center llg:text-xs lg:text-xs">Get To Know</h5>

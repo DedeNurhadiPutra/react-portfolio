@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
 import { GiCheckMark } from "react-icons/gi";
 
 const Service = () => {
-  // for title
-  useEffect(() => {
-    document.title = "Contact | Portfolio Dede Nurhadi Putra";
-  }, []);
-
   return (
     <div className="text-center mt-10 mb-20 md:pt-2 md:pb-10 llg:mb-10 lg:mb-10 lg:mt-8">
       <h6 className="text-xs md:text-base llg:text-xs lg:text-xs">

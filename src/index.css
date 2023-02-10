@@ -52,7 +52,20 @@
   .hide {
     display: none;
   }
-  /* ========== General Style ========== */
+
+  nav .active {
+    @apply rounded-full bg-indigo-900 bg-opacity-80;
+  }
+
+  #fullpage
+    .section
+    .fp-overflow
+    div
+    .swiper
+    .swiper-wrapper
+    .swiper-slide-active {
+    @apply bg-blue-900;
+  } /* ========== General Style ========== */
   /* fixed bottom-2 inset-x-0 bg-blue-800 bg-opacity-20 w-max mx-auto 
   py-3 px-3 z-50 flex flex-row justify-between gap-2 rounded-full backdrop-blur-sm */
 

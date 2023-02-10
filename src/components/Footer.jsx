@@ -13,19 +13,19 @@ const Footer = () => {
 
       <div className="flex justify-center gap-4 my-3 md:my-6">
         <a
-          href="https:://linkedin.com"
+          href="https://www.linkedin.com/in/dede-nurhadi-putra/"
           className="text-2xl ease-in-out duration-500 hover:scale-150 hover:text-blue-900 md:text-3xl"
         >
           <FaLinkedin />
         </a>
         <a
-          href="https:://github.com"
+          href="https://github.com/DedeNurhadiPutra"
           className="text-2xl ease-in-out duration-500 hover:scale-150 hover:text-[#333] md:text-3xl"
         >
           <FaGithub />
         </a>
         <a
-          href="https:://instagram.com"
+          href="https://www.instagram.com/denurhadiputra/"
           className="text-2xl ease-in-out duration-500 hover:scale-150 md:text-3xl"
         >
           {/* gradient for insta */}
@@ -47,7 +47,7 @@ const Footer = () => {
           <FaInstagram className="hover:fill-[url(#insta-gradient)]" />
         </a>
         <a
-          href="https:://codepen.com"
+          href="https://codepen.io/dedenurhadiputra"
           className="text-2xl ease-in-out duration-500 hover:scale-150 md:text-3xl"
         >
           <FaCodepen />

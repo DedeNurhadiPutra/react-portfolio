@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Contact = () => {
       form.current,
       "bNWEleIou45iELWr1"
     );
-    Alert.success("Thank you for submitting the form!", styles);
+    Alert.success("Thank you for getting in touch!", styles);
     e.target.reset();
   };
   // end emailjs
@@ -43,7 +43,9 @@ const Contact = () => {
       <div className="grid grid-cols-1 gap-4 mt-6 md:mt-8 llg:grid-cols-[30%,60%] llg:mt-5 llg:gap-6 lg:grid-cols-[30%,60%] lg:mt-5 lg:gap-6">
         <div>
           <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 lg:py-6">
-            <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            <a href="mailto:denurhadiputra@gmail.com" target="__blank">
+              <AiOutlineMail className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-red-500 group-active:scale-125 group-active:fill-red-500 group-focus:scale-125 group-focus:fill-red-500 md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            </a>
             <h4 className="llg:text-sm lg:text-sm">Email</h4>
             <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
               denurhadiputra@gmail.com
@@ -73,7 +75,12 @@ const Contact = () => {
               </linearGradient>
             </svg>
             {/* end gradient for insta */}
-            <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] md:my-4 md:text-5xl llg:text-4xl llg:my-1 lg:text-4xl lg:my-1" />
+            <a
+              href="https://www.instagram.com/denurhadiputra/"
+              target="__blank"
+            >
+              <AiOutlineInstagram className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-150 group-hover:fill-[url(#insta-gradient)] group-active:scale-150 group-active:fill-[url(#insta-gradient)] group-focus:scale-150 group-focus:fill-[url(#insta-gradient)] md:my-4 md:text-5xl llg:text-4xl llg:my-1 lg:text-4xl lg:my-1" />
+            </a>
             <h4 className="llg:text-sm lg:text-sm">Instagram</h4>
             <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
               @denurhadiputra
@@ -87,13 +94,18 @@ const Contact = () => {
             </a>
           </article>
           <article className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-indigo-900 ease-in-out duration-500 md:py-10 llg:py-4 lg:py-6">
-            <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366] md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            <a
+              href="https://api.whatsapp.com/send?phone=6282167500197"
+              target="__blank"
+            >
+              <FaWhatsapp className="inline-block mb-2 text-4xl ease-in-out duration-500 group-hover:scale-125 group-hover:fill-[#25D366]  group-active:scale-125 group-active:fill-[#25D366] group-focus:scale-125 group-focus:fill-[#25D366] md:my-4 md:text-5xl llg:text-3xl llg:my-1 lg:text-3xl lg:my-1" />
+            </a>
             <h4 className="llg:text-sm lg:text-sm">Whatsapp</h4>
             <h5 className="text-sm mt-1 mb-4 llg:text-xs lg:text-xs">
               +6282167500197
             </h5>
             <a
-              href="https://api.whatsapp.com/send?phone=+6282167500197"
+              href="https://api.whatsapp.com/send?phone=6282167500197"
               target="__blank"
               className="text-sm text-GoldenPoppy hover:text-yellow-600 ease-in-out duration-300 llg:text-xs llg:hover:text-[13px] lg:text-xs lg:hover:text-[13px]"
             >

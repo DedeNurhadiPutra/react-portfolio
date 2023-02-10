@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Project1 from "../assets/portfolio-1.png";
 import Project2 from "../assets/portfolio-2.PNG";
 import Project3 from "../assets/portfolio-3.PNG";
@@ -34,11 +33,6 @@ const data = [
 ];
 
 const Testimonial = () => {
-  // for title
-  useEffect(() => {
-    document.title = "Testimonial | Portfolio Dede Nurhadi Putra";
-  }, []);
-
   return (
     <div className="text-center md:py-6">
       <h6 className="text-xs mt-1 md:text-base llg:text-xs">My Recent Work</h6>
@@ -56,7 +50,7 @@ const Testimonial = () => {
           return (
             <SwiperSlide
               key={index}
-              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-900 ease-in-out duration-500 md:py-20 md:px-4 llg:py-16"
+              className="mx-auto border-solid border-[1px] bg-sky-800 border-indigo-500 rounded-2xl py-7 hover:bg-blue-600 ease-in-out duration-700 md:py-20 md:px-4 llg:py-16"
             >
               <img
                 src={avatar}
