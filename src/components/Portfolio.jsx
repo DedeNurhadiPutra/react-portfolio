@@ -8,14 +8,14 @@ const data = [
     image: Project1,
     title: "ReactJs API Simple Web (Mobile View Only)",
     code: "https://github.com/DedeNurhadiPutra/react-cra-training",
-    demo: "https://github.com/DedeNurhadiPutra",
+    demo: "https://cra-api-test.netlify.app/",
   },
   {
     id: 2,
     image: Project2,
     title: "Perpustakaan (Final Project SanberCode)",
     code: "https://gitlab.com/DedeNurhadiPutra/final_project",
-    demo: "https://github.com/DedeNurhadiPutra",
+    demo: "https://library.denurhadiputra.my.id/",
   },
   {
     id: 3,
