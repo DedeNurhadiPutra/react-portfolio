@@ -12,8 +12,6 @@ function App() {
     }, 5000);
   }, [])
   
-  
-
   return (
     <>
       {loading ? <Loader/> :
