@@ -19,7 +19,8 @@ module.exports = {
         // kemudian xl = 1280
         // '2xl': '1280px',
         // 'xl': '1024px',
-        'xl' : '1280',
+        '2xl': '2400px',
+        'xl' : '1280px',
         'llg': {'raw' : '(min-width:1000px) and (max-height: 720px)'},
         'cls': {'raw' : '(min-width:400px) and (max-height: 1000px)'},
       },

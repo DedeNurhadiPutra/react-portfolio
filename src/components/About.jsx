@@ -37,15 +37,15 @@ const About = () => {
             <article className="bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl p-8 hover:bg-indigo-900 hover:text-GoldenPoppy hover:transition hover:duration-500 llg:p-6">
               <VscFolderLibrary className="inline-block text-xl" />
               <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <small>15+ Completed</small>
             </article>
           </div>
 
           <p className="text-justify py-2 md:pt-10 md:pb-8 llg:py-6 lg:py-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
-            quidem porro quae quo maxime, illo repellendus ipsam reiciendis sed
-            optio libero? Consequatur repellat voluptas, dolorem molestias enim
-            facilis nobis harum!
+            Hey, my name is Dede Nurhadi Putra, I’m a Junior Fullstack web
+            developer from Indonesia. I have a passion for all things
+            technology, design, and music. I’m always curious to learn more when
+            it comes to new technologies and creative coding.
           </p>
 
           <button

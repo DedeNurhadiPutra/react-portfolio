@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import ME from "../assets/profile-6q.png";
+import ME from "../assets/profile-6.png";
 import CTA from "./CTA";
 import SocialMedia from "./SocialMedia";
 
