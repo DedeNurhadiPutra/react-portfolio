@@ -9,6 +9,9 @@ import { FaLaravel } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiCodeigniter } from "react-icons/si";
 import { SiLumen } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiPostgresql } from "react-icons/si";
 import { useState } from "react";
 
 const Experience = () => {
@@ -24,6 +27,9 @@ const Experience = () => {
     icon9: 1,
     icon10: 1,
     icon11: 1,
+    icon12: 1,
+    icon13: 1,
+    icon14: 1,
   });
   const [fills, setFills] = useState({
     icon1: 0,
@@ -37,6 +43,9 @@ const Experience = () => {
     icon9: 0,
     icon10: 0,
     icon11: 0,
+    icon12: 0,
+    icon13: 0,
+    icon14: 0,
   });
 
   const colors = {
@@ -51,6 +60,9 @@ const Experience = () => {
     icon9: "text-red-500",
     icon10: "text-red-500",
     icon11: "text-[#F4645F]",
+    icon12: "text-[#78CFF5]",
+    icon13: "text-black",
+    icon14: "text-[#31648C]",
   };
 
   const handleClick = (icon) => {
@@ -74,7 +86,7 @@ const Experience = () => {
         My Exprience
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 mt-6 md:mt-10 llg:w-3/4 llg:grid-cols-2 llg:gap-8 llg:mx-auto lg:w-3/4 lg:grid-cols-2 lg:gap-8 lg:mx-auto lg:justify-around">
+      <div className="grid grid-cols-1 gap-4 mt-6 llg:w-3/4 llg:grid-cols-2 llg:gap-8 llg:mx-auto lg:w-3/4 lg:grid-cols-2 lg:gap-8 lg:mx-auto lg:justify-around">
         <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-gradient-to-br hover:from-indigo-900 hover:to-fuchsia-900 ease-in-out duration-500 md:w-2/3 md:py-10 llg:w-full lg:w-full">
           <h3 className="text-lg">Frontend Development</h3>
           <div className="grid grid-cols-2 mt-8 gap-4 llg:gap-8 lg:gap-8">
@@ -111,7 +123,7 @@ const Experience = () => {
                 className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-sky-500 transform scale-${scales.icon5} ${fills.icon5} cursor-pointer`}
                 onClick={() => handleClick("icon5")}
               />
-              <h4>Tailwind</h4>
+              <h4>TailwindCss</h4>
             </article>
             <article>
               <FaReact
@@ -120,18 +132,53 @@ const Experience = () => {
               />
               <h4>ReactJS</h4>
             </article>
+            <article>
+              <SiJquery
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-[#78CFF5] transform scale-${scales.icon12} ${fills.icon12} cursor-pointer`}
+                onClick={() => handleClick("icon12")}
+              />
+              <h4>Jquery</h4>
+            </article>
+            <article>
+              <TbBrandNextjs
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-black transform scale-${scales.icon13} ${fills.icon13} cursor-pointer`}
+                onClick={() => handleClick("icon13")}
+              />
+              <h4>NextJS</h4>
+            </article>
           </div>
         </div>
 
         <div className="group w-5/6 mx-auto py-7 bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl hover:bg-gradient-to-br hover:from-indigo-900 hover:to-fuchsia-900 ease-in-out duration-500 md:w-2/3 md:py-10 llg:w-full lg:w-full">
           <h3 className="text-lg">Backend Development</h3>
           <div className="grid grid-cols-2 mt-8 gap-4 llg:gap-8 lg:gap-8">
-            <article>
+            <article className="-mt-2">
               <SiPhp
-                className={`inline-block mb-1 text-5xl ease-in-out duration-500 hover:scale-150 hover:text-indigo-500 transform scale-${scales.icon7} ${fills.icon7} cursor-pointer`}
+                className={`inline-block text-5xl ease-in-out duration-500 hover:scale-150 hover:text-indigo-500 transform scale-${scales.icon7} ${fills.icon7} cursor-pointer`}
                 onClick={() => handleClick("icon7")}
               />
               <h4>PHP</h4>
+            </article>
+            <article>
+              <SiCodeigniter
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-red-500 transform scale-${scales.icon10} ${fills.icon10} cursor-pointer`}
+                onClick={() => handleClick("icon10")}
+              />
+              <h4>Code Igniter</h4>
+            </article>
+            <article>
+              <FaLaravel
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-red-500 transform scale-${scales.icon9} ${fills.icon9} cursor-pointer`}
+                onClick={() => handleClick("icon9")}
+              />
+              <h4>Laravel</h4>
+            </article>
+            <article>
+              <SiLumen
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-[#F4645F] transform scale-${scales.icon11} ${fills.icon11} cursor-pointer`}
+                onClick={() => handleClick("icon11")}
+              />
+              <h4>Lumen</h4>
             </article>
             <article>
               {/* gradient for mysql */}
@@ -155,25 +202,11 @@ const Experience = () => {
               <h4>MySQL</h4>
             </article>
             <article>
-              <FaLaravel
-                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-red-500 transform scale-${scales.icon9} ${fills.icon9} cursor-pointer`}
-                onClick={() => handleClick("icon9")}
+              <SiPostgresql
+                className={`inline-block my-2 text-3xl ease-in-out duration-500 hover:scale-150 hover:fill-[#31648C] transform scale-${scales.icon14} ${fills.icon14} cursor-pointer`}
+                onClick={() => handleClick("icon14")}
               />
-              <h4>Laravel</h4>
-            </article>
-            <article>
-              <SiCodeigniter
-                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-red-500 transform scale-${scales.icon10} ${fills.icon10} cursor-pointer`}
-                onClick={() => handleClick("icon10")}
-              />
-              <h4>Code Igniter</h4>
-            </article>
-            <article>
-              <SiLumen
-                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-[#F4645F] transform scale-${scales.icon11} ${fills.icon11} cursor-pointer`}
-                onClick={() => handleClick("icon11")}
-              />
-              <h4>Lumen</h4>
+              <h4>PostgreSQL</h4>
             </article>
           </div>
         </div>

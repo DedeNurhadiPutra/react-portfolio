@@ -1,6 +1,8 @@
 import Project1 from "../assets/portfolio-1.png";
 import Project2 from "../assets/portfolio-2.PNG";
 import Project3 from "../assets/portfolio-3.PNG";
+import Project4 from "../assets/work-portfolio.PNG";
+import PortfolioPDF from "../assets/portfolio.pdf";
 
 const data = [
   {
@@ -52,10 +54,19 @@ const data = [
   },
   {
     id: 6,
+    image: Project4,
+    title: "Work Portfolio",
+    desc: "As a web developer, I have worked on a number of projects which have helped me build an impressive portfolio. Here are some of the projects I have worked on in the past.",
+    list: [],
+    code: "javascript.void(0)",
+    demo: "javascript.void(0)",
+  },
+  {
+    id: 7,
     image:
       "https://dedenurhadiputra.github.io/Personal-Portfolio/img/ComingSoon.jpg",
     title: "Coming Soon",
-    desc: "Coming Soon",
+    desc: "Coming Soon...",
     list: [],
     code: "javascript.void(0)",
     demo: "javascript.void(0)",
@@ -77,7 +88,9 @@ const Portfolio = () => {
           return (
             <div
               key={data.id}
-              className="text-left bg-[#202020] border-solid border-[1px] border-indigo-500 rounded-2xl py-6 hover:bg-blue-900 active:bg-blue-900 ease-in-out duration-500 llg:py-4 llg:w-[98%] lg:py-4 lg:w-[98%] md:relative h-auto"
+              className={` ${
+                data.id === 7 ? "text-center col-start-2" : "text-left"
+              } bg-[#202020] border-solid border-[1px] border-indigo-500 rounded-2xl py-6 hover:bg-blue-900 active:bg-blue-900 ease-in-out duration-500 llg:py-4 llg:w-[98%] lg:py-4 lg:w-[98%] md:relative h-auto`}
             >
               <img
                 src={data.image}
@@ -93,7 +106,11 @@ const Portfolio = () => {
                   {data.title}
                 </p>
               </div>
-              <div className="text-justify mx-auto w-[90%] py-3 px-4 my-3 border-solid border-[1px] border-indigo-900 rounded-2xl md:mb-20 xl:mb-2 2xl:-mb-80">
+              <div
+                className={`${
+                  data.id === 7 ? "h-32" : ""
+                } text-justify mx-auto w-[90%] py-3 px-4 my-3 border-solid border-[1px] border-indigo-900 rounded-2xl md:mb-20 xl:mb-2 2xl:-mb-80`}
+              >
                 <p className="indent-6 tracking-wide leading-tight">
                   {data.desc}
                 </p>
@@ -108,32 +125,46 @@ const Portfolio = () => {
                   })}
                 </ul>
               </div>
-              <div className="flex gap-2 px-6 md:absolute md:bottom-5">
-                <a
-                  href={data.code}
-                  className="p-4 rounded-md border border-blue-500 hover:bg-blue-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 llg:p-3 llg:text-sm lg:p-3 lg:text-sm"
-                  target="__blank"
-                  onClick={(event) =>
-                    data.code === "javascript.void(0)"
-                      ? event.preventDefault()
-                      : ""
-                  }
-                >
-                  Code
-                </a>
-                <a
-                  href={data.demo}
-                  className="p-4 rounded-md border text-GoldenPoppy bg-blue-500 border-indigo-500 hover:bg-blue-600 hover:text-GoldenYellow active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 llg:p-3 llg:text-sm lg:p-3 lg:text-sm"
-                  target="__blank"
-                  onClick={(event) =>
-                    data.demo === "javascript.void(0)"
-                      ? event.preventDefault()
-                      : ""
-                  }
-                >
-                  Live Demo
-                </a>
-              </div>
+              {data.id === 6 ? (
+                <div className="flex justify-center text-center">
+                  <div className="md:absolute md:bottom-7 md:left-0 md:right-0 md:mx-auto mt-2">
+                    <a
+                      href={PortfolioPDF}
+                      download
+                      className="bg-transparent border border-indigo-600 hover:bg-indigo-600 hover:text-GoldenPoppy p-3 rounded-lg text-sm text-GoldenYellow ease-linear duration-300 md:text-lg md:p-4 llg:p-3 llg:text-sm lg:p-3 lg:text-sm"
+                    >
+                      Download Portfolio
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex gap-2 px-6 md:absolute md:bottom-5">
+                  <a
+                    href={data.code}
+                    className="py-2 px-3 rounded-md border border-blue-500 hover:bg-blue-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 llg:p-3 llg:text-sm lg:p-3 lg:text-sm"
+                    target="__blank"
+                    onClick={(event) =>
+                      data.code === "javascript.void(0)"
+                        ? event.preventDefault()
+                        : ""
+                    }
+                  >
+                    Code
+                  </a>
+                  <a
+                    href={data.demo}
+                    className="py-2 px-3 rounded-md border text-GoldenPoppy bg-blue-500 border-indigo-500 hover:bg-blue-600 hover:text-GoldenYellow active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 llg:p-3 llg:text-sm lg:p-3 lg:text-sm"
+                    target="__blank"
+                    onClick={(event) =>
+                      data.demo === "javascript.void(0)"
+                        ? event.preventDefault()
+                        : ""
+                    }
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              )}
             </div>
           );
         })}
