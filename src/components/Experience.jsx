@@ -12,6 +12,7 @@ import { SiLumen } from "react-icons/si";
 import { SiJquery } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPostgresql } from "react-icons/si";
+import { SiLivewire } from "react-icons/si";
 import { useState } from "react";
 
 const Experience = () => {
@@ -30,6 +31,7 @@ const Experience = () => {
     icon12: 1,
     icon13: 1,
     icon14: 1,
+    icon15: 1,
   });
   const [fills, setFills] = useState({
     icon1: 0,
@@ -46,6 +48,7 @@ const Experience = () => {
     icon12: 0,
     icon13: 0,
     icon14: 0,
+    icon15: 0,
   });
 
   const colors = {
@@ -63,6 +66,7 @@ const Experience = () => {
     icon12: "text-[#78CFF5]",
     icon13: "text-black",
     icon14: "text-[#31648C]",
+    icon14: "text-[#FB6FA9]",
   };
 
   const handleClick = (icon) => {
@@ -80,16 +84,14 @@ const Experience = () => {
   };
 
   return (
-    <div className="text-center my-10 md:pt-0 md:pb-10">
+    <div className="my-10 text-center md:pt-0 md:pb-10">
       <h6 className="text-xs md:text-base llg:text-xs">What Skill I Have</h6>
-      <h2 className="text-xl mt-1 text-blue-500 font-bold md:text-2xl">
-        My Exprience
-      </h2>
+      <h2 className="mt-1 text-xl font-bold text-blue-500 md:text-2xl">My Exprience</h2>
 
       <div className="grid grid-cols-1 gap-4 mt-6 llg:w-3/4 llg:grid-cols-2 llg:gap-8 llg:mx-auto lg:w-3/4 lg:grid-cols-2 lg:gap-8 lg:mx-auto lg:justify-around">
         <div className="group w-5/6 mx-auto bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl py-7 hover:bg-gradient-to-br hover:from-indigo-900 hover:to-fuchsia-900 ease-in-out duration-500 md:w-2/3 md:py-10 llg:w-full lg:w-full">
           <h3 className="text-lg">Frontend Development</h3>
-          <div className="grid grid-cols-2 mt-8 gap-4 llg:gap-8 lg:gap-8">
+          <div className="grid grid-cols-2 gap-4 mt-8 llg:gap-8 lg:gap-8">
             <article>
               <FaHtml5
                 className={`inline-block mb-1 text-4xl ease-in-out duration-500 hover:scale-150 transform scale-${scales.icon1} ${fills.icon1} hover:text-orange-500 cursor-pointer`}
@@ -151,7 +153,7 @@ const Experience = () => {
 
         <div className="group w-5/6 mx-auto py-7 bg-blue-900 border-solid border-[1px] border-indigo-500 rounded-2xl hover:bg-gradient-to-br hover:from-indigo-900 hover:to-fuchsia-900 ease-in-out duration-500 md:w-2/3 md:py-10 llg:w-full lg:w-full">
           <h3 className="text-lg">Backend Development</h3>
-          <div className="grid grid-cols-2 mt-8 gap-4 llg:gap-8 lg:gap-8">
+          <div className="grid grid-cols-2 gap-4 mt-8 llg:gap-8 lg:gap-8">
             <article className="-mt-2">
               <SiPhp
                 className={`inline-block text-5xl ease-in-out duration-500 hover:scale-150 hover:text-indigo-500 transform scale-${scales.icon7} ${fills.icon7} cursor-pointer`}
@@ -174,6 +176,13 @@ const Experience = () => {
               <h4>Laravel</h4>
             </article>
             <article>
+              <SiLivewire
+                className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-[#FB6FA9] transform scale-${scales.icon15} ${fills.icon15} cursor-pointer`}
+                onClick={() => handleClick("icon15")}
+              />
+              <h4>Livewire</h4>
+            </article>
+            <article>
               <SiLumen
                 className={`inline-block mb-1 text-3xl ease-in-out duration-500 hover:scale-150 hover:text-[#F4645F] transform scale-${scales.icon11} ${fills.icon11} cursor-pointer`}
                 onClick={() => handleClick("icon11")}
@@ -183,13 +192,7 @@ const Experience = () => {
             <article>
               {/* gradient for mysql */}
               <svg width="0" height="0">
-                <linearGradient
-                  id="mysql-gradient"
-                  x1="25%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
+                <linearGradient id="mysql-gradient" x1="25%" y1="0%" x2="100%" y2="0%">
                   <stop stopColor="#00758f" offset="0%" />
                   <stop stopColor="#f29111" offset="100%" />
                 </linearGradient>
